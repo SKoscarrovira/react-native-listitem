@@ -1,5 +1,5 @@
-var React = require('react-native')
-var {Text, TouchableHighlight, View} = React
+var React = require('react')
+var {Text, TouchableHighlight, View} = require('react-native')
 
 var styles = require('./styles.js')
 
