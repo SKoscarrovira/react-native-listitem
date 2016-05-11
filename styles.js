@@ -1,5 +1,4 @@
-var React = require('react-native')
-var {StyleSheet} = React
+var {StyleSheet} = require('react-native')
 
 var styles = StyleSheet.create({
   li: {
