@@ -7,6 +7,7 @@ var Listitem = React.createClass({
   getDefaultProps: function() {
     return {
       onPress: null,
+      onLongPress: null,
       text: null,
       underlayColor: "rgba(0,0,0,.015)",
     }
@@ -14,6 +15,10 @@ var Listitem = React.createClass({
 , _handlePress: function() {
     var onPress = this.props.onPress
     if (onPress) onPress()
+  }
+, _handleLongPress: function() {
+    var onLongPress = this.props.onLongPress
+    if (onLongPress) onLongPress()
   }
 , render: function() {
     var self = this
@@ -30,11 +35,13 @@ var Listitem = React.createClass({
     var listitem = <View style={[styles.li, p.style]}>{listitemChild}</View>
 
     return (
-      p.onPress ?
+      (p.onPress || p.onLongPress) ?
         <TouchableHighlight
           style={styleLiContainer}
           underlayColor={p.underlayColor}
-          onPress={self._handlePress}>
+          onPress={self._handlePress}
+          onLongPress={self._handleLongPress}
+        >
             {listitem}
         </TouchableHighlight>
       : <View style={styleLiContainer}>{listitem}</View>
