@@ -3,7 +3,7 @@ var {StyleSheet} = require('react-native')
 var styles = StyleSheet.create({
   li: {
     borderBottomColor: '#c8c7cc',
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: 2 * StyleSheet.hairlineWidth,
     paddingTop: 15,
     paddingRight: 15,
     paddingBottom: 15,
