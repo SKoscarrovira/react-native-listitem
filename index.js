@@ -1,9 +1,10 @@
 var React = require('react')
 var {Text, TouchableHighlight, View} = require('react-native')
+var createClass = require('create-react-class')
 
 var styles = require('./styles.js')
 
-var Listitem = React.createClass({
+var Listitem = createClass({
   getDefaultProps: function() {
     return {
       onPress: null,

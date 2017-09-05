@@ -1,6 +1,6 @@
 {
   "name": "react-native-listitem",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "iOS-style listitem component",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,11 @@
     "swipe",
     "ui"
   ],
+  "dependencies": {
+    "react": "^16.0.0-beta.5",
+    "react-native": "^0.48.1",
+    "create-react-class": "^15.6.0"
+  },
   "author": "Dan Cormier",
   "license": "MIT",
   "bugs": {
