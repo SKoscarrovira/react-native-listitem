@@ -19,8 +19,8 @@
     "ui"
   ],
   "dependencies": {
-    "react": "^16.0.0-beta.5",
-    "react-native": "^0.48.1",
+    "react": "^16.1.1",
+    "react-native": "^0.51.0-rc.2",
     "create-react-class": "^15.6.0"
   },
   "author": "Dan Cormier",
